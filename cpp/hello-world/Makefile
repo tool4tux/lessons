@@ -1,6 +1,8 @@
 .phony: clean
 APP=hello
 
+all: $(APP)
+
 $(APP): $(APP).o
 	g++ $< -o $@ 
 
